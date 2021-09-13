@@ -1,0 +1,50 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-4894814501994758679 [label="/\\ leftB = {\"g\", \"w\", \"c\"}\n/\\ boatPos = \"l\"\n/\\ rightB = {}",style = filled]
+-4894814501994758679 -> 5605026652578908999 [label="",color="2",fontcolor="2"];
+5605026652578908999 [label="/\\ leftB = {\"w\", \"c\"}\n/\\ boatPos = \"r\"\n/\\ rightB = {\"g\"}"];
+5605026652578908999 -> -4894814501994758679 [label="",color="2",fontcolor="2"];
+5605026652578908999 -> 4087012663981758789 [label="",color="3",fontcolor="3"];
+4087012663981758789 [label="/\\ leftB = {\"w\", \"c\"}\n/\\ boatPos = \"l\"\n/\\ rightB = {\"g\"}"];
+4087012663981758789 -> 3381282913933995023 [label="",color="2",fontcolor="2"];
+3381282913933995023 [label="/\\ leftB = {\"c\"}\n/\\ boatPos = \"r\"\n/\\ rightB = {\"g\", \"w\"}"];
+4087012663981758789 -> 988892799749189435 [label="",color="2",fontcolor="2"];
+988892799749189435 [label="/\\ leftB = {\"w\"}\n/\\ boatPos = \"r\"\n/\\ rightB = {\"g\", \"c\"}"];
+3381282913933995023 -> -6643457282737481972 [label="",color="2",fontcolor="2"];
+-6643457282737481972 [label="/\\ leftB = {\"g\", \"c\"}\n/\\ boatPos = \"l\"\n/\\ rightB = {\"w\"}"];
+4087012663981758789 -> 5605026652578908999 [label="",color="4",fontcolor="4"];
+988892799749189435 -> -7992912852138494519 [label="",color="2",fontcolor="2"];
+-7992912852138494519 [label="/\\ leftB = {\"g\", \"w\"}\n/\\ boatPos = \"l\"\n/\\ rightB = {\"c\"}"];
+3381282913933995023 -> 4087012663981758789 [label="",color="2",fontcolor="2"];
+-6643457282737481972 -> 3381282913933995023 [label="",color="2",fontcolor="2"];
+988892799749189435 -> 4087012663981758789 [label="",color="2",fontcolor="2"];
+-6643457282737481972 -> 3175377817457388126 [label="",color="2",fontcolor="2"];
+3175377817457388126 [label="/\\ leftB = {\"g\"}\n/\\ boatPos = \"r\"\n/\\ rightB = {\"w\", \"c\"}"];
+-7992912852138494519 -> 988892799749189435 [label="",color="2",fontcolor="2"];
+-7992912852138494519 -> 3175377817457388126 [label="",color="2",fontcolor="2"];
+3175377817457388126 -> -7992912852138494519 [label="",color="2",fontcolor="2"];
+3175377817457388126 -> -6643457282737481972 [label="",color="2",fontcolor="2"];
+3175377817457388126 -> 6389294446101958017 [label="",color="3",fontcolor="3"];
+6389294446101958017 [label="/\\ leftB = {\"g\"}\n/\\ boatPos = \"l\"\n/\\ rightB = {\"w\", \"c\"}"];
+6389294446101958017 -> 3517051924635862017 [label="",color="2",fontcolor="2"];
+3517051924635862017 [label="/\\ leftB = {}\n/\\ boatPos = \"r\"\n/\\ rightB = {\"g\", \"w\", \"c\"}"];
+6389294446101958017 -> 3175377817457388126 [label="",color="4",fontcolor="4"];
+3517051924635862017 -> 6389294446101958017 [label="",color="2",fontcolor="2"];
+{rank = same; -4894814501994758679;}
+{rank = same; 5605026652578908999;}
+{rank = same; 4087012663981758789;}
+{rank = same; 3381282913933995023;988892799749189435;}
+{rank = same; -7992912852138494519;-6643457282737481972;}
+{rank = same; 3175377817457388126;}
+{rank = same; 6389294446101958017;}
+{rank = same; 3517051924635862017;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+GotoLeft [label="GotoLeft",fillcolor=3]
+Next [label="Next",fillcolor=2]
+GotoRight [label="GotoRight",fillcolor=4]
+}}
